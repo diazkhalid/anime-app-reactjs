@@ -61,7 +61,13 @@ export default function App() {
           <span role="img">🍥</span>
         </div>
         <div className="search-container">
-          <input className="search" type="text" placeholder="Search anime..." value={query} onChange={(e) => setQuery(e.target.value)} />
+          <input
+            className="search"
+            type="text"
+            placeholder="Search anime..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
           <p className="search-results">
             Found <strong>4</strong> results
           </p>
