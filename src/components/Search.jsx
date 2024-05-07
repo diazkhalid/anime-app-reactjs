@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import NumResult from './NumResult';
 
-export default function Search({ animes }) {
+export default function Search({ children }) {
   const [query, setQuery] = useState('');
   return (
     <div className="search-container">
@@ -12,7 +11,7 @@ export default function Search({ animes }) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <NumResult animes={animes} />
+      {children}
     </div>
   );
 }
